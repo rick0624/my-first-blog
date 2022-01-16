@@ -49,7 +49,7 @@ h4 {
     color: #ffffff;
     float: right;
     font-size: 26pt;
-    margin-right: 20px;
+    margin-right: 20vw;
 }
 
 .post {
@@ -75,5 +75,21 @@ h4 {
 
 .btn-secondary:hover {
     color: #FFFFFF;
-    background-color: #C25100;
+    background-color: #4f947f;
 }
+
+.publish {
+    color:aqua;
+    /* right: 500px; */
+}
+
+/* .AutoNewline
+{
+word-break: break-all;
+} */
+/* .btn-default,
+.btn-default:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+} */
