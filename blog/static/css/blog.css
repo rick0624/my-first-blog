@@ -10,7 +10,7 @@ body {
 .page-header {
     background-color: #00c29e;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 20px 20px 20px 40px;
 }
 
@@ -48,10 +48,10 @@ h4 {
 .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 26pt;
-    margin-right: 20vw;
+    font-size: 16pt;
+    /* margin-right: 20vw;
     height: 50px;
-    width: 30px;
+    width: 300px; */
 }
 
 .post {
@@ -104,57 +104,32 @@ h4 {
     border-color: red;
 }
 
-/* .btn-primary > .remove:hover{
-    color: red;
-    background: orange;
-} */
-/* .remove {
-    color: red;
-    background: none;
-    border-color: red;
-} */
-
 .btn-primary > .approve{
     color: green;
     background: none;
     border-color: green;
 }
-/* .approve {
-    color: green;
-    background: none;
-    border-color: green;
-} */
-
 .approve:hover {
     color: green;
     background: none;
     border-color: green;
     /* right: 500px; */
 }
-/* @font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url('../fonts/glyphicons-halflings-regular.eot');
-    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+
+table, th,td,tr {
+    border: 1px solid black;
 }
-   
-.glyphicon {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -moz-osx-font-smoothing: grayscale;
-} */
-/* .AutoNewline
-{
-word-break: break-all;
-} */
-/* .btn-default,
-.btn-default:visited {
-    color: #C25100;
-    background: none;
-    border-color: #C25100;
-} */
+
+td:hover{
+    color: white;
+    background-color: rgb(48, 197, 202);
+}
+th:hover{
+    color: green;
+    /* background-color: red; */
+}
+
+tr:hover{
+    color:rgb(170, 211, 58);
+    background-color: rgb(48, 197, 202);
+}

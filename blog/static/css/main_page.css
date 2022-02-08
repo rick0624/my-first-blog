@@ -1,0 +1,57 @@
+
+.container {
+    /* position:relative;
+    width:300px;
+    height:200px; */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.welcome{
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 40pt;
+    /* position:absolute;
+    top:200px;
+    left:420px */
+}
+
+.container-small {
+    color:violet;
+    width: 200px;
+    height: 100px;
+}
+
+.button-1{
+    color: rgb(71, 234, 255);
+    background-color: tomato;
+}
+.button-1:hover{
+    color: rgb(71, 234, 255);
+    background-color: rgb(71, 255, 148);
+}
+.button-2{
+    color: rgb(41, 83, 146);
+    background-color: wheat;
+}
+.button-2:hover{
+    color: rgb(71, 234, 255);
+    background-color: rgb(71, 255, 148);
+}
+
+.chose-font {
+    font-size: 30pt;
+}
+/* .container {
+    color:yellow;
+    font-size: 30pt;
+} */
+/* .flex{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:1000px;
+    height:600px;
+    background-color:#eee;
+  } */

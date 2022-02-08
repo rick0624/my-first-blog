@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Rick's blog</title>
+        <link href="static/css/main_page.css" rel="stylesheet" type="text/css">
+    </head>
+    <body bgcolor=#00c29e>
+        <div class="container">
+            <h1 class="welcome">
+                Welcome to Rick's Blog!!!
+            </h1> 
+            <div class="container-small">
+                <div class="button-1">
+                    <a href="{% url 'post_list' %}" class='chose-font'>Go to list</a>
+                </div>
+                <div class="button-2">
+                    <a href="{% url 'post_board' %}" class='chose-font'>Go to Bulletin</a>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>

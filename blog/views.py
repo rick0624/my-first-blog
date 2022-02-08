@@ -64,6 +64,7 @@ def post_remove(request, pk):
     post.delete()
     return redirect('post_list')
 
+@login_required
 def add_comment_to_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
@@ -89,6 +90,15 @@ def comment_remove(request, pk):
     comment.delete()
     return redirect('post_detail', pk=comment.post.pk)
 
-def LoginView(request):
-    return render(request, 'registration/login.html')
+@login_required
+def post_bulletin(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request,'blog/post_bulletin.html', {'posts':posts})
+    
+@login_required
+def main_page(request):
+    return render(request,'blog/main_page.html')
+
+# def LoginView(request):
+#     return render(request, 'registration/login.html')
 

@@ -1,0 +1,52 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <!-- {% for post in posts %}
+        <article class="post">
+            
+             <time class="date">
+                {{ post.published_date }}
+            </time>
+            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+            <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
+        </article>
+        <hr>
+    {% endfor %}  -->
+    <!-- <table border= 10 width= 200px cellpadding= 5 cellspacing= 10>
+        <caption>Post</caption>
+    </table> -->
+    <table style="border:5px #862b2b solid;"  cellpadding='25';>
+        <tr>
+          <th>Title</th>
+          <th>Content</th>
+          <th>Writer</th>
+          <th>Comment</th>
+          <th>Created Time</th>
+          <th>Last Update</th>
+        </tr>
+        {% for post in posts %}
+        <tr>
+            <td><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></td>
+            <td>{{post.text|truncatechars:"50"}}</td>
+            <td>{{post.author}}</td>
+            <td>{{post.approved_comments.count}}</td>
+            <td>{{post.created_date}}</td>
+            <td>{{post.published_date}}</td>
+          </tr>
+        {% endfor %}
+        <!-- <tr>
+          <td>USA</td>
+          <td>Washington D.C.</td>
+          <td>309 million</td>
+          <td>English</td>
+        </tr>
+        <tr>
+          <td>Sweden</td>
+          <td>Stockholm</td>
+          <td>9 million</td>
+          <td>Swedish</td>
+        </tr> -->
+    </table>
+{% endblock %}
+<!-- style="border:3px #cccccc solid;" cellpadding="20" border='1'  -->

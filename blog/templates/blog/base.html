@@ -15,15 +15,27 @@
                         {% include './icons/file-earmark-plus.svg' %}
                     </a>
                     <a href="{% url 'post_draft_list' %}" class="top-menu">
-                        <span class="glyphicon glyphicon-edit">
-                            Draft
-                        </span>
+                        <!-- <span class="glyphicon glyphicon-edit"> -->
+                            Draft&nbsp;
+                        <!-- </span> -->
                     </a>
+                    <a href="{% url 'post_board' %}" class="top-menu">
+                        <!-- <span class="glyphicon glyphicon-edit"> -->
+                            Bulletin&nbsp;
+                        <!-- </span> -->
+                    </a>
+                    <a href="{% url 'post_list' %}" class="top-menu">
+                        <!-- <span class="glyphicon glyphicon-edit"> -->
+                            List&nbsp;
+                        <!-- </span> -->
+                    </a>
+                    <p class="top-menu">Hello {{ user.username }} <small>(<a href="{% url 'logout' %}">Log out</a>)&nbsp;</small></p>
+                {% else %}
+                    <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
                 {% endif %}
                 <h1><a href="/">Rick's Blog</a></h1>
             </div>
         </header>
-
         <main class="container">
             <div class="row">
                 <div class="col">
