@@ -33,3 +33,18 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.text
+
+# class Counter:
+#     count = 0
+
+#     def increment(self):
+#         self.count += 1
+#         return self
+
+#     def decrement(self):
+#         self.count -= 1
+#         return self.count
+
+#     def double(self):
+#         self.count *= 2
+#         return self.count

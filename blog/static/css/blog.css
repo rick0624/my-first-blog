@@ -8,7 +8,7 @@ body {
 } */
 
 .page-header {
-    background-color: #00c29e;
+    background-color: rgb(23, 29, 27);;
     margin-top: 0;
     margin-bottom: 20px;
     padding: 20px 20px 20px 40px;
@@ -105,14 +105,14 @@ h4 {
 }
 
 .btn-primary > .approve{
-    color: green;
+    color: black;
     background: none;
-    border-color: green;
+    border-color: black;
 }
 .approve:hover {
-    color: green;
+    color: black;
     background: none;
-    border-color: green;
+    border-color: black;
     /* right: 500px; */
 }
 
@@ -121,15 +121,40 @@ table, th,td,tr {
 }
 
 td:hover{
-    color: white;
-    background-color: rgb(48, 197, 202);
+    color: black;
+    background-color: rgb(214, 216, 216);
 }
 th:hover{
-    color: green;
-    /* background-color: red; */
+    color: black;
+    background-color: rgb(214, 216, 216);
 }
 
 tr:hover{
-    color:rgb(170, 211, 58);
-    background-color: rgb(48, 197, 202);
+    color:black;
+    background-color: rgb(214, 216, 216);
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
 }
