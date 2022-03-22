@@ -122,7 +122,8 @@ def main_page(request):
 
 # @login_required
 def home(request):
-    return render(request, 'registration/login.html')
+    # return render(request, 'registration/login.html')
+    return render(request,'blog/main_page.html')
 
 class RegisterView(View):
     form_class = RegisterForm
