@@ -120,7 +120,7 @@ def listing(request):
 def main_page(request):
     return render(request,'blog/main_page.html')
 
-# @login_required
+@login_required
 def home(request):
     # return render(request, 'registration/login.html')
     return render(request,'blog/main_page.html')
